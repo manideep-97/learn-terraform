@@ -8,3 +8,4 @@ variable "sample1" {}
 output "sample1" {
   value = var.sample1
 }
+
