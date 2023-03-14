@@ -29,7 +29,7 @@ variable "sample7" {
   default = {
     string = "hello",
     number = 100,
-    boolean = tree
+    boolean = true
   }
 }
 output "types" {
