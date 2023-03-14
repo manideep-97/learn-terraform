@@ -6,7 +6,7 @@ resource "aws_instance" "frontend" {
     Name = "frontend"
   }
 }
-resource "aws_instance" "frontend" {
+resource "aws_route53_record" "frontend" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "frontend-dev.devops71.shop"
   type = "A"
@@ -21,7 +21,7 @@ resource "aws_instance" "cart" {
     Name = "cart"
   }
 }
-resource "aws_instance" "cart" {
+resource "aws_route53_record" "cart" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "cart-dev.devops71.shop"
   type = "A"
@@ -36,7 +36,7 @@ resource "aws_instance" "catalogue" {
     Name = "catalogue"
   }
 }
-resource "aws_instance" "catalogue" {
+resource "aws_route53_record" "catalogue" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "catalogue-dev.devops71.shop"
   type = "A"
@@ -51,7 +51,7 @@ resource "aws_instance" "user" {
     Name = "user"
   }
 }
-resource "aws_instance" "user" {
+resource "aws_route53_record" "user" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "user-dev.devops71.shop"
   type = "A"
@@ -66,7 +66,7 @@ resource "aws_instance" "shipping" {
     Name = "shipping"
   }
 }
-resource "aws_instance" "shipping" {
+resource "aws_route53_record" "shipping" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "shipping-dev.devops71.shop"
   type = "A"
@@ -81,7 +81,7 @@ resource "aws_instance" "payment" {
     Name = "payment"
   }
 }
-resource "aws_instance" "payment" {
+resource "aws_route53_record" "payment" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "payment-dev.devops71.shop"
   type = "A"
@@ -96,7 +96,7 @@ resource "aws_instance" "mongodb" {
     Name = "mongodb"
   }
 }
-resource "aws_instance" "mongodb" {
+resource "aws_route53_record" "mongodb" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "mongodb-dev.devops71.shop"
   type = "A"
@@ -111,7 +111,7 @@ resource "aws_instance" "mysql" {
     Name = "mysql"
   }
 }
-resource "aws_instance" "mysql" {
+resource "aws_route53_record" "mysql" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "mysql-dev.devops71.shop"
   type = "A"
@@ -126,7 +126,7 @@ resource "aws_instance" "redis" {
     Name = "redis"
   }
 }
-resource "aws_instance" "redis" {
+resource "aws_route53_record" "redis" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "redis-dev.devops71.shop"
   type = "A"
@@ -141,7 +141,7 @@ resource "aws_instance" "rabbitmq" {
     Name = "rabbitmq"
   }
 }
-resource "aws_instance" "rabbitmq" {
+resource "aws_route53_record" "rabbitmq" {
   zone_id = "Z04957413KGOV6PV52A79"
   name = "rabbitmq-dev.devops71.shop"
   type = "A"
