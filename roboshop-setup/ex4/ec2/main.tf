@@ -4,8 +4,9 @@ data "aws_ami" "ami" {
   owners = ["973714476881"]
 
 }
+
 resource "aws_instance" "ec2" {
-  ami ="ami-0089b8e98cd95257d"
+  ami = data.aws_ami.ami.image_id
   instance_type = var.instance_type
   vpc_security_group_ids = ["sg-0c2f41ec147dbe0a4"]
   tags = {
