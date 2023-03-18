@@ -12,6 +12,7 @@ resource "aws_instance" "ec2" {
   tags = {
     Name = var.component
   }
+
 }
 resource "aws_route53_record" "record" {
   zone_id = "Z04957413KGOV6PV52A79"
