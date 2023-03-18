@@ -16,4 +16,5 @@ variable "instances" {
       count = "t3.small"
     }
   }
+
 }
