@@ -8,3 +8,4 @@ module "ec2" {
   instance_type = each.value["type"]
   sg_id           = module.sg.sg_id
 }
+
